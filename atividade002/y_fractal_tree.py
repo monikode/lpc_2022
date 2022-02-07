@@ -9,9 +9,10 @@ rt(-90)
 # the base and branch of the Y
 angle = 30
 
+
 # function to plot a Y
 def y(size, level):
-    if level>0:
+    if level > 0:
         colormode(255)
 
         # splitting the rgb range for green
@@ -41,6 +42,7 @@ def y(size, level):
 
         rt(angle)
         fd(-size)
+
 
 # tree of size 80 and level 7
 y(80, 7)
