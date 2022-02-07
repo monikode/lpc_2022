@@ -1,10 +1,10 @@
 import turtle
  
 # Screen() method to get screen
-wn=turtle.Screen() 
+wn = turtle.Screen() 
  
 # creating tess object
-tess=turtle.Turtle() 
+tess = turtle.Turtle() 
  
 def triangle(x,y): 
     # it is used to draw out the pen
