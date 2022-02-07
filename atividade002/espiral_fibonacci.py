@@ -10,32 +10,32 @@ def fibo_plot(n):
     
     x.pencolor("blue")
     
-    x.forward(b * factor)
+    x.forward(b*factor)
     x.left(90)
-    x.forward(b * factor)
+    x.forward(b*factor)
     x.left(90)
-    x.forward(b * factor)
+    x.forward(b*factor)
     x.left(90)
-    x.forward(b * factor)
+    x.forward(b*factor)
  
     
     temp = square_b
-    square_b = square_b + square_a
+    square_b = square_b+square_a
     square_a = temp
      
     
     for i in range(1, n):
-        x.backward(square_a * factor)
+        x.backward(square_a*factor)
         x.right(90)
-        x.forward(square_b * factor)
+        x.forward(square_b*factor)
         x.left(90)
-        x.forward(square_b * factor)
+        x.forward(square_b*factor)
         x.left(90)
-        x.forward(square_b * factor)
+        x.forward(square_b*factor)
  
         
         temp = square_b
-        square_b = square_b + square_a
+        square_b = square_b+square_a
         square_a = temp
    
     x.penup()
@@ -48,14 +48,14 @@ def fibo_plot(n):
     x.left(90)
     for i in range(n):
         print(b)
-        fdwd = math.pi * b * factor / 2
+        fdwd = math.pi*b*factor / 2
         fdwd /= 90
         for j in range(90):
             x.forward(fdwd)
             x.left(1)
         temp = a
         a = b
-        b = temp + b
+        b = temp+b
 
 factor = 1
 
